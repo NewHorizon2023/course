@@ -137,7 +137,7 @@ public class SortFunctions {
         arr4 = mergeSort(arr4);
         long end4 = System.nanoTime();
         System.out.println("Merge sort time: " + (end4 - start4) / 100000 + "ms");
-        System.out.println(Arrays.toString(arr4));
+//        System.out.println(Arrays.toString(arr4));
 
 
     }
