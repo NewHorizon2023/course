@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e2e4028c-3544-461c-ad49-79080d2a45a2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithms/BubbleSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithms/LargeNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithms/LargeNumberMilli.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithms/LargerNumberNano.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithms/LargestNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithms/LargestNumberArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithms/SmallerNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithms/SortFunctions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataStructure/MyArrTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataStructure/MyArrayList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataStructure/MyStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataStructure/StackApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataStructure/StackInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataStructure/Tester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataStructure/TimeCalculate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataStructure/homework/QueueByArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataStructure/homework/QueueByArrayList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataStructure/homework/QueueTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataStructure/homework/StackByArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataStructure/homework/StackByArrayList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataStructure/homework/StackTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DistributedSystem/App/example/hello/Client.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DistributedSystem/App/example/hello/Hello.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DistributedSystem/App/example/hello/PowerGUI.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DistributedSystem/App/example/hello/PowerGUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DistributedSystem/App/example/hello/Server.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DistributedSystem/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DistributedSystem/Hello.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DistributedSystem/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DistributedSystem/Tester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DistributedSystem/firstGRPC/helloworld/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DistributedSystem/firstGRPC/helloworld/src/main/java/io/grpc/examples/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DistributedSystem/firstGRPC/helloworld/src/test/java/io/grpc/examples/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\maven-repository" />
+        <option name="mavenHome" value="E:\Program Files\JetBrains\IntelliJ IDEA 2020.1.2\plugins\maven\lib\maven3" />
+        <option name="userSettingsFile" value="E:\Program Files\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2RD01vYK6w5AlSLP0TRwEHRJmvO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration useDefault="false">E:\Program Files\TortoiseSVN</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e2e4028c-3544-461c-ad49-79080d2a45a2" name="Changes" comment="" />
+      <created>1686769135220</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686769135220</updated>
+      <workItem from="1686769136066" duration="307000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
