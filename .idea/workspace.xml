@@ -1,42 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e2e4028c-3544-461c-ad49-79080d2a45a2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithms/BubbleSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithms/LargeNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithms/LargeNumberMilli.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithms/LargerNumberNano.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithms/LargestNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithms/LargestNumberArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithms/SmallerNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithms/SortFunctions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataStructure/MyArrTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataStructure/MyArrayList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataStructure/MyStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataStructure/StackApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataStructure/StackInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataStructure/Tester.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataStructure/TimeCalculate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataStructure/homework/QueueByArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataStructure/homework/QueueByArrayList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataStructure/homework/QueueTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataStructure/homework/StackByArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataStructure/homework/StackByArrayList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataStructure/homework/StackTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DistributedSystem/App/example/hello/Client.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DistributedSystem/App/example/hello/Hello.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DistributedSystem/App/example/hello/PowerGUI.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DistributedSystem/App/example/hello/PowerGUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DistributedSystem/App/example/hello/Server.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DistributedSystem/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DistributedSystem/Hello.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DistributedSystem/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DistributedSystem/Tester.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DistributedSystem/firstGRPC/helloworld/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DistributedSystem/firstGRPC/helloworld/src/main/java/io/grpc/examples/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DistributedSystem/firstGRPC/helloworld/src/test/java/io/grpc/examples/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +35,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -86,11 +55,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1686769135220</updated>
-      <workItem from="1686769136066" duration="307000" />
+      <workItem from="1686769136066" duration="1124000" />
     </task>
+    <task id="LOCAL-00001" summary="gitignore update">
+      <created>1686773357808</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1686773357809</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="gitignore update" />
+    <option name="LAST_COMMIT_MESSAGE" value="gitignore update" />
   </component>
 </project>
