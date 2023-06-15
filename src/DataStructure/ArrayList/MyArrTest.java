@@ -1,6 +1,4 @@
-package DataStructure;
-
-import DataStructure.MyArrayList;
+package DataStructure.ArrayList;
 
 /**
  * @author 刘祥楠
