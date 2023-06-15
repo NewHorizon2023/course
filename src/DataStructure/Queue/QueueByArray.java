@@ -1,4 +1,4 @@
-package DataStructure.homework;
+package DataStructure.Queue;
 
 public class QueueByArray<T> {
 

@@ -1,7 +1,4 @@
-package homework1;
-
-import DataStructure.homework.StackByArray;
-import DataStructure.homework.StackByArrayList;
+package DataStructure.Stack;
 
 public class StackTest {
     public static void main(String[] args) {

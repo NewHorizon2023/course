@@ -1,4 +1,4 @@
-package DataStructure;
+package Algorithms;
 
 /**
  * @author 刘祥楠

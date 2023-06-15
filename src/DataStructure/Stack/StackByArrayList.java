@@ -1,4 +1,4 @@
-package DataStructure.homework;
+package DataStructure.Stack;
 
 import java.util.ArrayList;
 

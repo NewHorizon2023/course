@@ -1,4 +1,4 @@
-package DataStructure.homework;
+package DataStructure.Stack;
 
 public class StackByArray<T> {
     private T[] arr;

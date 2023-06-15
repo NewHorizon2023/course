@@ -1,4 +1,4 @@
-package DataStructure.homework;
+package DataStructure.Queue;
 
 import java.util.ArrayList;
 

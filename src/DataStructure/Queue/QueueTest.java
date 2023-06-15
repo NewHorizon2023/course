@@ -1,7 +1,4 @@
-package DataStructure.homework;
-
-import DataStructure.homework.QueueByArray;
-import DataStructure.homework.QueueByArrayList;
+package DataStructure.Queue;
 
 public class QueueTest {
     public static void main(String[] args) {
