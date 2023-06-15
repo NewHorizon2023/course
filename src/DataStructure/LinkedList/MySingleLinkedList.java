@@ -4,7 +4,7 @@ import java.util.Objects;
 
 public class MySingleLinkedList<T> {
     private static class Node<T> {
-        private T item;
+        private final T item;
         private Node<T> next;
 
         private Node(T item) {
@@ -18,10 +18,6 @@ public class MySingleLinkedList<T> {
 
     public MySingleLinkedList() {
 
-    }
-
-    private MySingleLinkedList(T item) {
-        first = last = new Node<>(item);
     }
 
     public void addFirst(T item) {
