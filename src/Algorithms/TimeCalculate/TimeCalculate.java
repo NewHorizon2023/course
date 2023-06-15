@@ -1,4 +1,4 @@
-package Algorithms;
+package Algorithms.TimeCalculate;
 
 /**
  * @author 刘祥楠

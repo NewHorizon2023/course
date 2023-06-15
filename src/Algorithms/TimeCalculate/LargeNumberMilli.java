@@ -1,12 +1,12 @@
-package Algorithms;
+package Algorithms.TimeCalculate;
 
 import java.util.Scanner;
 
 /**
  * @author 刘祥楠
- * @date 2023-05-26 15:24
+ * @date 2023-05-26 15:26
  */
-public class SmallerNumber {
+public class LargeNumberMilli {
     public static void main(String[] args) {
         System.out.println("Please input the first number!");
         Scanner scanner = new Scanner(System.in);
@@ -14,9 +14,9 @@ public class SmallerNumber {
         System.out.println("Please input the second number!");
         int num2 = scanner.nextInt();
         long startTime = System.currentTimeMillis();
-        int num = Math.min(num1, num2);
+        int num = Math.max(num1, num2);
         long endTime = System.currentTimeMillis();
         System.out.println("Large number is: " + num);
-        System.out.println("Used time: " + (endTime - startTime) + " million seconds");
+        System.out.println("Used time: " + (endTime - startTime) + " million seconds.");
     }
 }

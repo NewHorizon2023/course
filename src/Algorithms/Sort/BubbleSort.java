@@ -1,4 +1,4 @@
-package Algorithms;/*
+package Algorithms.Sort;/*
 1. 	Start with an unsorted array of elements.
 2. 	Compare the first element with the second element.
 If the first element is greater than the second element, swap them.
