@@ -88,6 +88,7 @@ public class MySingleLinkedList<T> {
                 previous.next = current.next;
                 // delete the pointer of the deleted item, in order to clear it by the gc
                 current.next = null;
+                size--;
                 return;
             }
             previous = current;
