@@ -6,7 +6,7 @@ package Algorithms.TimeCalculate;
  */
 public class TimeCalculate {
     public static void main(String[] args) {
-        long start = System.nanoTime();
+        long start = System.currentTimeMillis();
 //        int x = 100;
 //        int y = x * 5 + x * x - 2;
 //        int z = x + y * y - 56;
@@ -31,7 +31,7 @@ public class TimeCalculate {
 //
 //
 //
-//        long end = System.nanoTime();
+//        long end = System.currentTimeMillis();
 //        System.out.println(end - start);
 //
 //        int f[] = new int[100];

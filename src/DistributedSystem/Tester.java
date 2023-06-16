@@ -1,6 +1,6 @@
 public class Tester {
     public static void main(String[] args) {
-        long begin = System.nanoTime();
+        long begin = System.currentTimeMillis();
         int x = 0;
         int y = 10;
         int sum = x + y;
@@ -9,7 +9,7 @@ public class Tester {
         } else {
             y = y + 50;
         }
-        long end = System.nanoTime();
+        long end = System.currentTimeMillis();
         System.out.println(end - begin);
     }
 }

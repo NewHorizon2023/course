@@ -13,9 +13,9 @@ public class LargerNumberNano {
         int num1 = scanner.nextInt();
         System.out.println("Please input the second number!");
         int num2 = scanner.nextInt();
-        long startTime = System.nanoTime();
+        long startTime = System.currentTimeMillis();
         int num = Math.max(num1, num2);
-        long endTime = System.nanoTime();
+        long endTime = System.currentTimeMillis();
         System.out.println("Large number is: " + num);
         System.out.println("Used time: " + (endTime - startTime) + "nano seconds.");
     }

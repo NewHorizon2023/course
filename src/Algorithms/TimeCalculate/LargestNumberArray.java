@@ -8,7 +8,7 @@ import java.util.Arrays;
  */
 public class LargestNumberArray {
     public static void main(String[] args) {
-        long startTime = System.nanoTime();
+        long startTime = System.currentTimeMillis();
         int[] arr = new int[10];
         int temp = 0;
         for (int i = 0; i < arr.length; i++) {
@@ -19,7 +19,7 @@ public class LargestNumberArray {
                 temp = Math.max(arr[i], temp);
             }
         }
-        long endTime = System.nanoTime();
+        long endTime = System.currentTimeMillis();
         System.out.println("The array is: " + Arrays.toString(arr));
         System.out.println("The largest number is: " + temp);
         System.out.println("Used time is: " + (endTime - startTime) + " nano seconds.");
