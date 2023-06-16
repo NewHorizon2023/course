@@ -43,6 +43,32 @@ public class SortFunctions {
         }
     }
 
+    public static void insertionSortUpdated(int[] arr) {
+        for (int i = 1; i < arr.length; i++) {
+            int left = 0;
+            int right = i;
+            while (left <= right) {
+                int mid = (left + right) / 2;
+                if (arr[i] > arr[mid]) {
+                    left = mid + 1;
+                } else {
+                    right = mid - 1;
+                }
+            }
+
+            int insertIndex = left;
+            int insertValue = arr[i];
+
+            // 移动元素腾出插入位置
+            for (int j = i; j > insertIndex; j--) {
+                arr[j] = arr[j - 1];
+            }
+            // 插入新元素
+            arr[insertIndex] = insertValue;
+
+        }
+    }
+
     public static void selectionSort(int[] arr) {
         for (int i = 0; i < arr.length - 1; i++) {
             int index = i;
@@ -50,10 +76,10 @@ public class SortFunctions {
                 if (arr[j] < arr[i]) {
                     index = j;
                 }
-                int temp = arr[i];
-                arr[i] = arr[index];
-                arr[index] = temp;
             }
+            int temp = arr[i];
+            arr[i] = arr[index];
+            arr[index] = temp;
         }
     }
 
@@ -114,6 +140,7 @@ public class SortFunctions {
         int[] arr2 = Arrays.copyOf(arr, arr.length);
         int[] arr3 = Arrays.copyOf(arr, arr.length);
         int[] arr4 = Arrays.copyOf(arr, arr.length);
+        int[] arr5 = Arrays.copyOf(arr, arr.length);
 
         long start1 = System.nanoTime();
         bubbleSort(arr1);
@@ -126,6 +153,12 @@ public class SortFunctions {
         long end2 = System.nanoTime();
         System.out.println("Insertion sort time: " + (end2 - start2) / 100000 + "ms");
 //        System.out.println(Arrays.toString(arr2));
+
+        long start5 = System.nanoTime();
+        insertionSortUpdated(arr5);
+        long end5 = System.nanoTime();
+        System.out.println("Updated insertion sort time: " + (end5 - start5) / 100000 + "ms");
+//        System.out.println(Arrays.toString(arr5));
 
         long start3 = System.nanoTime();
         selectionSort(arr3);
