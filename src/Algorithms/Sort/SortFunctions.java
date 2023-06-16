@@ -132,7 +132,7 @@ public class SortFunctions {
     }
 
     public static void main(String[] args) {
-        int[] arr = new int[10000];
+        int[] arr = new int[20000];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = (int) (arr.length * Math.random());
         }
@@ -171,7 +171,6 @@ public class SortFunctions {
         long end4 = System.nanoTime();
         System.out.println("Merge sort time: " + (end4 - start4) / 100000 + "ms");
 //        System.out.println(Arrays.toString(arr4));
-
 
     }
 }

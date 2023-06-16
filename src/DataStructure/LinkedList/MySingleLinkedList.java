@@ -161,7 +161,6 @@ public class MySingleLinkedList<T> {
         // replace the beginning character from "," to "[", and add "]" at the end
         sb.replace(0, 1, "[").append("]");
 
-
         return sb.toString();
     }
 
