@@ -1,81 +1,68 @@
 package Algorithms.Sort;
 
-/**
- * InsertionSortByLinkedList
- *
- * @Author: Xiangnan Liu
- * @CreateTime: 2023-06-17
- */
 public class InsertionSortByLinkedList {
-    public static SingleLinkedList insertionSortByLinkedList(int[] arr) {
-        SingleLinkedList list = new SingleLinkedList(arr[0]);
-        for (int i = 1; i < arr.length; i++) {
-            SingleLinkedList.Node current = list.first;
-            SingleLinkedList.Node previous = null;
-            while (current != null && arr[i] > current.item) {
-                previous = current;
-                current = current.next;
-            }
+    public static class Node {
+        int data;
+        Node next;
 
-            SingleLinkedList.Node newNode = new SingleLinkedList.Node(arr[i]);
-            if (previous == null) {
-                newNode.next = list.first;
-                list.first = newNode;
-            } else if (current == null) {
-                previous.next = newNode;
-                list.last = newNode;
-            } else {
-                newNode.next = current;
-                previous.next = newNode;
-            }
+        public Node(int data) {
+            this.data = data;
+            this.next = null;
         }
-        return list;
     }
 
-    public static class SingleLinkedList {
-        private static class Node {
-            private final int item;
-            private Node next;
-
-            private Node(int item) {
-                this.item = item;
-            }
+    public static Node insertionSortByLinkedList(Node head) {
+        if (head == null || head.next == null) {
+            return head;
         }
 
-        private Node first;
-        private Node last;
+        Node sortedHead = null;
+        Node current = head;
 
-        public SingleLinkedList(int item) {
-            first = last = new Node(item);
+        while (current != null) {
+            Node nextNode = current.next;
+
+            if (sortedHead == null || current.data < sortedHead.data) {
+                current.next = sortedHead;
+                sortedHead = current;
+            } else {
+                Node sortedCurrent = sortedHead;
+                while (sortedCurrent.next != null && current.data > sortedCurrent.next.data) {
+                    sortedCurrent = sortedCurrent.next;
+                }
+
+                current.next = sortedCurrent.next;
+                sortedCurrent.next = current;
+            }
+
+            current = nextNode;
         }
 
-        public String toString() {
-            if (first == null) {
-                return null;
-            }
-            Node node = first;
-            StringBuilder sb = new StringBuilder();
-            while (node != null) {
-                sb.append(", ").append(node.item);
-                node = node.next;
-            }
-            // replace the beginning character from "," to "[", and add "]" at the end
-            sb.replace(0, 1, "[").append("]");
+        return sortedHead;
+    }
 
-            return sb.toString();
+    public static void printList(Node head) {
+        Node current = head;
+        while (current != null) {
+            System.out.print(current.data + " ");
+            current = current.next;
         }
-
+        System.out.println();
     }
 
     public static void main(String[] args) {
-        int[] arr = new int[10000];
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = (int) (arr.length * Math.random());
+        int size = 10000;
+        Node head = new Node((int) (size * Math.random()));
+        Node current = head;
+
+        for (int i = 1; i < size; i++) {
+            current.next = new Node((int) (size * Math.random()));
+            current = current.next;
         }
-        long start = System.currentTimeMillis();
-        SingleLinkedList list = insertionSortByLinkedList(arr);
-        long end = System.currentTimeMillis();
-        System.out.println("Insertion sort time: " + (end - start) + "ms");
-        System.out.println(list);
+
+        long start6 = System.currentTimeMillis();
+        Node sortedHead = insertionSortByLinkedList(head);
+        long end6 = System.currentTimeMillis();
+        System.out.println(end6 - start6);
     }
 }

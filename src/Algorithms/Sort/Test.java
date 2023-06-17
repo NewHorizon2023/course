@@ -16,7 +16,8 @@ import static Algorithms.Sort.SelectionSort.selectionSort;
 public class Test {
 
     public static void main(String[] args) {
-        int[] arr = new int[40000];
+        int size = 40000;
+        int[] arr = new int[size];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = (int) (arr.length * Math.random());
         }
@@ -25,7 +26,13 @@ public class Test {
         int[] arr3 = Arrays.copyOf(arr, arr.length);
         int[] arr4 = Arrays.copyOf(arr, arr.length);
         int[] arr5 = Arrays.copyOf(arr, arr.length);
-        int[] arr6 = Arrays.copyOf(arr, arr.length);
+
+        InsertionSortByLinkedList.Node head = new InsertionSortByLinkedList.Node((int) (size * Math.random()));
+        InsertionSortByLinkedList.Node current = head;
+        for (int i = 1; i < size; i++) {
+            current.next = new InsertionSortByLinkedList.Node((int) (size * Math.random()));
+            current = current.next;
+        }
 
         long start1 = System.currentTimeMillis();
         bubbleSort(arr1);
@@ -46,10 +53,9 @@ public class Test {
 //        System.out.println(Arrays.toString(arr5));
 
         long start6 = System.currentTimeMillis();
-        InsertionSortByLinkedList.SingleLinkedList list = insertionSortByLinkedList(arr6);
+        insertionSortByLinkedList(head);
         long end6 = System.currentTimeMillis();
-        System.out.println("Insertion sort by linked list sort time: " + (end6 - start6) + "ms");
-//        System.out.println(list);
+        System.out.println("Insertion by linked list sort time: " + (end6 - start6) + "ms");
 
         long start3 = System.currentTimeMillis();
         selectionSort(arr3);
