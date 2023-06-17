@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 import static Algorithms.Sort.BubbleSort.bubbleSort;
 import static Algorithms.Sort.InsertionSort.insertionSort;
+import static Algorithms.Sort.InsertionSortByLinkedList.insertionSortByLinkedList;
 import static Algorithms.Sort.InsertionSortImproved.insertionSortImproved;
 import static Algorithms.Sort.MergeSort.mergeSort;
 import static Algorithms.Sort.SelectionSort.selectionSort;
@@ -12,10 +13,10 @@ import static Algorithms.Sort.SelectionSort.selectionSort;
  * @author 刘祥楠
  * @date 2023-06-09 14:25
  */
-public class SortFunctionsComparison {
+public class Test {
 
     public static void main(String[] args) {
-        int[] arr = new int[20000];
+        int[] arr = new int[40000];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = (int) (arr.length * Math.random());
         }
@@ -24,6 +25,7 @@ public class SortFunctionsComparison {
         int[] arr3 = Arrays.copyOf(arr, arr.length);
         int[] arr4 = Arrays.copyOf(arr, arr.length);
         int[] arr5 = Arrays.copyOf(arr, arr.length);
+        int[] arr6 = Arrays.copyOf(arr, arr.length);
 
         long start1 = System.currentTimeMillis();
         bubbleSort(arr1);
@@ -40,8 +42,14 @@ public class SortFunctionsComparison {
         long start5 = System.currentTimeMillis();
         insertionSortImproved(arr5);
         long end5 = System.currentTimeMillis();
-        System.out.println("Updated insertion sort time: " + (end5 - start5) + "ms");
+        System.out.println("Improved insertion sort time: " + (end5 - start5) + "ms");
 //        System.out.println(Arrays.toString(arr5));
+
+        long start6 = System.currentTimeMillis();
+        InsertionSortByLinkedList.SingleLinkedList list = insertionSortByLinkedList(arr6);
+        long end6 = System.currentTimeMillis();
+        System.out.println("Insertion sort by linked list sort time: " + (end6 - start6) + "ms");
+//        System.out.println(list);
 
         long start3 = System.currentTimeMillis();
         selectionSort(arr3);
