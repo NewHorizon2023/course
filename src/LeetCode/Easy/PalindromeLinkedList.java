@@ -1,4 +1,4 @@
-package LeetCode.easy;
+package LeetCode.Easy;
 
 /**
  * Palindrome Linked List
