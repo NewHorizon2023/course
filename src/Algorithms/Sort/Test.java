@@ -1,5 +1,6 @@
 package Algorithms.Sort;
 
+
 import java.util.Arrays;
 
 import static Algorithms.Sort.BubbleSort.bubbleSort;
@@ -14,7 +15,6 @@ import static Algorithms.Sort.SelectionSort.selectionSort;
  * @date 2023-06-09 14:25
  */
 public class Test {
-
     public static void main(String[] args) {
         int size = 40000;
         int[] arr = new int[size];
