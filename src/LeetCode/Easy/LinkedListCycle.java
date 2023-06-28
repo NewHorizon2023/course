@@ -4,6 +4,8 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
+ * <a href="https://leetcode.com/problems/linked-list-cycle/">...</a>
+ *
  * @author 刘祥楠
  * @date 2023-06-20 17:18
  */
@@ -31,6 +33,19 @@ public class LinkedListCycle {
             set.add(node);
             node = node.next;
         }
+    }
+
+    public boolean hasCycle2(ListNode head) {
+        ListNode node = head;
+        while (node != null) {
+            if (node.val == 100001) {
+                return true;
+            }
+            node.val = 100001;
+            node = node.next;
+        }
+
+        return false;
     }
 
 }
