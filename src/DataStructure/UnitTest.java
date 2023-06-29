@@ -1,13 +1,13 @@
-package DataStructure.LinkedList.SampleProblems;
+package DataStructure;
 
+import DataStructure.LinkedList.SampleProblems.LinedList;
 import org.junit.jupiter.api.Test;
 
 /**
  * @author 刘祥楠
- * @date 2023-06-29 15:53
+ * @date 2023-05-30 17:05
  */
-public class SampleProblemsTest {
-
+public class UnitTest {
     @Test
     public void sizeTest() {
         LinedList list = new LinedList();
@@ -17,5 +17,4 @@ public class SampleProblemsTest {
         System.out.println(list.size());
         System.out.println(list.getAverage());
     }
-
 }
