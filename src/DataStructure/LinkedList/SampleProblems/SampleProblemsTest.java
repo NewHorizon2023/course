@@ -10,7 +10,7 @@ public class SampleProblemsTest {
 
     @Test
     public void sizeTest() {
-        LinedList list = new LinedList();
+        LinkedList list = new LinkedList();
         list.add("NCI", 100);
         list.add("UCD", 95);
         list.add("TCD", 98);

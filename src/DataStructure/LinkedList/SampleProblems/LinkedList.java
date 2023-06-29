@@ -6,7 +6,7 @@ import java.util.Objects;
  * @author 刘祥楠
  * @date 2023-06-29 14:49
  */
-public class LinedList {
+public class LinkedList {
     private static class Node {
         private final Record value;
         private Node next;
