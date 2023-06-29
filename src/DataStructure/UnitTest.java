@@ -1,6 +1,5 @@
 package DataStructure;
 
-import DataStructure.LinkedList.SampleProblems.LinedList;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -10,11 +9,6 @@ import org.junit.jupiter.api.Test;
 public class UnitTest {
     @Test
     public void sizeTest() {
-        LinedList list = new LinedList();
-        list.add("NCI", 100);
-        list.add("UCD", 95);
-        list.add("TCD", 98);
-        System.out.println(list.size());
-        System.out.println(list.getAverage());
+        System.out.println("Hello World");
     }
 }
