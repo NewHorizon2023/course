@@ -1,6 +1,7 @@
 package DataStructure;
 
 import DataStructure.HashTable.HashTable;
+import DataStructure.Tree.BinaryTree;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -25,5 +26,19 @@ public class UnitTest {
         System.out.println(table);
 
         System.out.println(table.get(0));
+    }
+
+
+    @Test
+    public void binaryTreeTest() {
+        BinaryTree tree = new BinaryTree();
+        tree.insert(5);
+        tree.insert(3);
+        tree.insert(6);
+        tree.insert(2);
+        tree.insert(4);
+        tree.insert(8);
+        tree.insert(10);
+        System.out.println(tree.find(4));
     }
 }
