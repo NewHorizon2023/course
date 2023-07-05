@@ -40,5 +40,8 @@ public class UnitTest {
         tree.insert(8);
         tree.insert(10);
         System.out.println(tree.find(4));
+        tree.breadthTraverse();
+        System.out.println("--------------------------------------");
+        tree.depthTraverse();
     }
 }

@@ -53,4 +53,30 @@ public class BinaryTree {
         }
         return false;
     }
+
+    public void breadthTraverse() {
+        breadthTraverse(root);
+    }
+
+    private void breadthTraverse(Node node) {
+        if (node == null) {
+            return;
+        }
+        System.out.println(node.value);
+        breadthTraverse(node.leftChild);
+        breadthTraverse(node.rightChild);
+    }
+
+    public void depthTraverse() {
+        depthTraverse(root);
+    }
+
+    private void depthTraverse(Node node) {
+        if (node == null) {
+            return;
+        }
+        depthTraverse(node.leftChild);
+        System.out.println(node.value);
+        depthTraverse(node.rightChild);
+    }
 }
