@@ -62,7 +62,7 @@ public class MergeSort {
         while (list.size() > 1) {
             List<int[]> subList = new ArrayList<>(list.size());
             for (int i = 0; i < list.size(); i = i + 2) {
-                if (i + 1 == list.size()) {
+                if (i == list.size() - 1) {
                     subList.add(list.get(list.size() - 1));
                     break;
                 }
