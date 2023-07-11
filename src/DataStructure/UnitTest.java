@@ -39,9 +39,20 @@ public class UnitTest {
         tree.insert(4);
         tree.insert(8);
         tree.insert(10);
+        BinaryTree tree1 = new BinaryTree();
+        tree1.insert(5);
+        tree1.insert(3);
+        tree1.insert(6);
+        tree1.insert(2);
+        tree1.insert(4);
+        tree1.insert(8);
+        tree1.insert(11);
         System.out.println(tree.find(4));
-        tree.breadthTraverse();
+        // tree.breadthTraverse();
         System.out.println("--------------------------------------");
-        tree.depthTraverse();
+        // tree.depthTraverse();
+        tree.swapRoot();
+        System.out.println(tree.isBinarySearchTree());
+
     }
 }

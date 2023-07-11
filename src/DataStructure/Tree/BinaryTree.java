@@ -79,4 +79,74 @@ public class BinaryTree {
         System.out.println(node.value);
         depthTraverse(node.rightChild);
     }
+
+    public int height() {
+        return height(root);
+    }
+
+    private int height(Node root) {
+        if (root == null) {
+            return -1;
+        }
+        if (root.leftChild == null && root.rightChild == null) {
+            return 0;
+        }
+        return Math.max(height(root.leftChild), height(root.leftChild)) + 1;
+    }
+
+    public int min() {
+        return min(root);
+    }
+
+    private int min(Node root) {
+        if (root == null) {
+            return Integer.MAX_VALUE;
+        }
+        if (root.rightChild == null && root.leftChild == null) {
+            return root.value;
+        }
+        return Math.min(Math.min(min(root.leftChild), min(root.rightChild)), root.value);
+    }
+
+    public boolean equals(BinaryTree tree) {
+        if (tree == null) {
+            return false;
+        }
+        return equals(root, tree.root);
+    }
+
+    private boolean equals(Node first, Node second) {
+        if (first == null && second == null) {
+            return true;
+        }
+
+        if (first != null && second != null) {
+            return first.value == second.value && equals(first.leftChild, second.leftChild) && equals(first.rightChild, second.rightChild);
+        }
+
+        return false;
+    }
+
+    public boolean isBinarySearchTree() {
+        return isBinarySearchTree(root, Integer.MAX_VALUE, Integer.MIN_VALUE);
+    }
+
+    private boolean isBinarySearchTree(Node root, int max, int min) {
+        if (root == null) {
+            return true;
+        }
+
+        if (root.value <= min || root.value > max) {
+            return false;
+        }
+
+        return isBinarySearchTree(root.leftChild, root.value, min) && isBinarySearchTree(root.rightChild, max, root.value);
+    }
+
+    public void swapRoot() {
+        Node temp = root.rightChild;
+        root.rightChild = root.leftChild;
+        root.leftChild = temp;
+    }
+
 }
