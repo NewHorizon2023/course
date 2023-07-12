@@ -149,4 +149,20 @@ public class BinaryTree {
         root.leftChild = temp;
     }
 
+    public void printNodeAtDistance(int distance) {
+        printNodeAtDistance(root, distance);
+    }
+
+    private void printNodeAtDistance(Node node, int distance) {
+        if (node == null) {
+            return;
+        }
+        if (distance == 0) {
+            System.out.println(node.value);
+            return;
+        }
+        printNodeAtDistance(node.leftChild, distance - 1);
+        printNodeAtDistance(node.rightChild, distance - 1);
+    }
+
 }

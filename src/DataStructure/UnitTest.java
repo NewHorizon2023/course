@@ -51,8 +51,9 @@ public class UnitTest {
         // tree.breadthTraverse();
         System.out.println("--------------------------------------");
         // tree.depthTraverse();
-        tree.swapRoot();
-        System.out.println(tree.isBinarySearchTree());
+        //tree.swapRoot();
+        //System.out.println(tree.isBinarySearchTree());
+        tree.printNodeAtDistance(0);
 
     }
 }
