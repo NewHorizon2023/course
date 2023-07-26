@@ -40,7 +40,7 @@ public class Test {
         bubbleSort(arr1);
         long end1 = System.currentTimeMillis();
         System.out.println("Bubble sort time: " + (end1 - start1) + "ms");
-        System.out.println(Arrays.toString(arr1));
+//        System.out.println(Arrays.toString(arr1));
 
         long start2 = System.currentTimeMillis();
         insertionSort(arr2);
