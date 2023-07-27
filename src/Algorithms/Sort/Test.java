@@ -8,6 +8,7 @@ import static Algorithms.Sort.InsertionSort.insertionSort;
 import static Algorithms.Sort.InsertionSortByLinkedList.insertionSortByLinkedList;
 import static Algorithms.Sort.InsertionSortImproved.insertionSortImproved;
 import static Algorithms.Sort.MergeSort.mergeSort;
+import static Algorithms.Sort.MergeSort.mergeSort2;
 import static Algorithms.Sort.SelectionSort.selectionSort;
 
 /**
@@ -16,7 +17,7 @@ import static Algorithms.Sort.SelectionSort.selectionSort;
  */
 public class Test {
     public static void main(String[] args) {
-        int size = 40000;
+        int size = 10000;
         int[] arr = new int[size];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = (int) (arr.length * Math.random());
@@ -26,6 +27,7 @@ public class Test {
         int[] arr3 = Arrays.copyOf(arr, arr.length);
         int[] arr4 = Arrays.copyOf(arr, arr.length);
         int[] arr5 = Arrays.copyOf(arr, arr.length);
+        int[] arr7 = Arrays.copyOf(arr, arr.length);
 
         InsertionSortByLinkedList.Node head = new InsertionSortByLinkedList.Node((int) (size * Math.random()));
         InsertionSortByLinkedList.Node current = head;
@@ -68,6 +70,12 @@ public class Test {
         long end4 = System.currentTimeMillis();
         System.out.println("Merge sort time: " + (end4 - start4) + "ms");
 //        System.out.println(Arrays.toString(arr4));
+
+        long start7 = System.currentTimeMillis();
+        arr4 = mergeSort2(arr7);
+        long end7 = System.currentTimeMillis();
+        System.out.println("Merge sort 2 time: " + (end7 - start7) + "ms");
+//        System.out.println(Arrays.toString(arr7));
 
     }
 }
