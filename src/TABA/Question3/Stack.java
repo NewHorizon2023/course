@@ -35,7 +35,6 @@ public class Stack implements StackInterface<String> {
         }
 
         size--;
-
         // If there is only 1 element in the stack
         if (first == last) {
             String value = first.value;

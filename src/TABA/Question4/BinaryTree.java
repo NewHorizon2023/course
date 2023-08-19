@@ -25,12 +25,16 @@ public class BinaryTree implements BinaryTreeInterface<FoodProduct> {
             return;
         }
         Node<FoodProduct> current = root;
+        // Traverse until find the correct position of the new node
         while (true) {
+            // Compare node to current node
             if (foodProduct.compareTo(current.value) < 0) {
+                // If left child is null, set it node
                 if (current.leftChild == null) {
                     current.leftChild = node;
                     return;
                 }
+                // Else go on traversing
                 current = current.leftChild;
             } else {
                 if (current.rightChild == null) {
@@ -52,6 +56,12 @@ public class BinaryTree implements BinaryTreeInterface<FoodProduct> {
         return max(root).value;
     }
 
+    /**
+     * Find the max node of the subtree
+     *
+     * @param root
+     * @return
+     */
     private Node<FoodProduct> max(Node<FoodProduct> root) {
         if (root == null) {
             return null;
@@ -64,6 +74,13 @@ public class BinaryTree implements BinaryTreeInterface<FoodProduct> {
         return max(max(max(root.leftChild), max(root.rightChild)), root);
     }
 
+    /**
+     * Find the greater node out of 2
+     *
+     * @param node1
+     * @param node2
+     * @return
+     */
     private Node<FoodProduct> max(Node<FoodProduct> node1, Node<FoodProduct> node2) {
         if (node1 == null) {
             return node2;
@@ -83,7 +100,7 @@ public class BinaryTree implements BinaryTreeInterface<FoodProduct> {
     }
 
     /**
-     * Find the min node of a sub-root
+     * Find the min node of a subtree
      *
      * @param root
      * @return
