@@ -53,7 +53,8 @@ public class BinaryTree implements BinaryTreeInterface<FoodProduct> {
 
     @Override
     public FoodProduct max() {
-        return max(root).value;
+        Node<FoodProduct> node = max(root);
+        return node != null ? node.value : null;
     }
 
     /**
@@ -96,7 +97,8 @@ public class BinaryTree implements BinaryTreeInterface<FoodProduct> {
 
     @Override
     public FoodProduct min() {
-        return min(root).value;
+        Node<FoodProduct> node = min(root);
+        return node != null ? node.value : null;
     }
 
     /**
