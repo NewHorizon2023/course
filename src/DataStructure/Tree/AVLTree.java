@@ -38,10 +38,40 @@ public class AVLTree {
             root.rightChild = insert(root.rightChild, value);
         }
 
-        int leftHeight = root.leftChild == null ? -1 : root.leftChild.height;
-        int rightHeight = root.rightChild == null ? -1 : root.rightChild.height;
+        int leftHeight = height(root.leftChild);
+        int rightHeight = height(root.rightChild);
         root.height = Math.max(leftHeight, rightHeight) + 1;
 
         return root;
+    }
+
+    private int height(Node node) {
+        return node == null ? -1 : node.height;
+    }
+
+    private int balanceFactor(Node node) {
+        return node == null ? 0 : height(node.leftChild) - height(node.rightChild);
+    }
+
+    private boolean isLeftHeavy(Node root) {
+        return balanceFactor(root.leftChild) - balanceFactor(root.rightChild) > 1;
+    }
+
+    private boolean isRightHeavy(Node root) {
+        return balanceFactor(root.leftChild) - balanceFactor(root.rightChild) < -1;
+    }
+
+    private void balance(Node root) {
+        if (isLeftHeavy(root)) {
+            if (balanceFactor(root.leftChild) < 0) {
+                System.out.println("Left rotate" + root.leftChild.value);
+            }
+            System.out.println("Right rotate" + root.value);
+        } else if (isRightHeavy(root)) {
+            if (balanceFactor(root.rightChild) > 0) {
+                System.out.println("Right rotate" + root.rightChild.value);
+            }
+            System.out.println("Left rotate" + root.value);
+        }
     }
 }
