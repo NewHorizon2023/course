@@ -1,4 +1,4 @@
-package TABA.Question4;
+package DataStructure.TABA.Question4;
 
 public interface BinaryTreeInterface<T> {
     boolean isEmpty();
