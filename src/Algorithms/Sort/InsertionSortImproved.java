@@ -19,11 +19,11 @@ public class InsertionSortImproved {
             int insertIndex = left;
             int insertValue = arr[i];
 
-            // 移动元素腾出插入位置
+            // Move elements to make room for insertion
             for (int j = i; j > insertIndex; j--) {
                 arr[j] = arr[j - 1];
             }
-            // 插入新元素
+            // Insert the new element
             arr[insertIndex] = insertValue;
         }
     }
