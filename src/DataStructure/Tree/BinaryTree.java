@@ -26,6 +26,7 @@ public class BinaryTree {
             return;
         }
         Node current = root;
+        // 遍历所有节点，直至找到合适的位置
         while (true) {
             if (value < current.value) {
                 if (current.leftChild == null) {

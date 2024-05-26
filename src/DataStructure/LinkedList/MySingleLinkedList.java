@@ -77,6 +77,12 @@ public class MySingleLinkedList<T> {
         if (first == null) {
             return;
         }
+
+        if (Objects.equals(first.item, item)) {
+            first = first.next;
+            return;
+        }
+
         Node<T> previous = first;
         Node<T> current = previous.next;
         while (current != null) {
