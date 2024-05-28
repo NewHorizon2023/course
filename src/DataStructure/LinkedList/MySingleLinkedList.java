@@ -127,31 +127,15 @@ public class MySingleLinkedList<T> {
     }
 
     public void revert() {
-        if (first == last) {
-            return;
-        }
-        if (size == 2) {
-            Node<T> temp = first;
-            first = last;
-            last = temp;
-            return;
-        }
-        Node<T> previous = first;
-        Node<T> current = previous.next;
-        Node<T> after = current.next;
-        while (after != null) {
-            // change the direction of pointer
+        Node<T> previous = null;
+        Node<T> current = first;
+
+        while (current != null) {
+            Node<T> nextNode = current.next;
             current.next = previous;
-            // move next
             previous = current;
-            current = after;
-            after = after.next;
+            current = nextNode;
         }
-        last.next = previous;
-        last = first;
-        // put the pointer of last item to null
-        last.next = null;
-        first = current;
     }
 
     public String toString() {
