@@ -63,7 +63,7 @@ public class MergeSort {
             List<int[]> subList = new ArrayList<>(list.size());
             for (int i = 0; i < list.size(); i = i + 2) {
                 if (i == list.size() - 1) {
-                    subList.add(list.get(list.size() - 1));
+                    subList.add(list.getLast());
                     break;
                 }
                 subList.add(merge(list.get(i), list.get(i + 1)));
@@ -71,11 +71,11 @@ public class MergeSort {
             list = subList;
         }
 
-        return list.get(0);
+        return list.getFirst();
     }
 
     public static void main(String[] args) {
-        int[] arr = new int[1000000];
+        int[] arr = new int[10000];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = (int) (arr.length * Math.random());
         }
@@ -91,7 +91,7 @@ public class MergeSort {
         arr1 = mergeSort2(arr1);
         long end1 = System.currentTimeMillis();
         System.out.println("Insertion sort2 time: " + (end1 - start1) + "ms");
-        //System.out.println(Arrays.toString(arr1));
+        System.out.println(Arrays.toString(arr1));
     }
 }
 
